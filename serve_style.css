@@ -1,0 +1,93 @@
+body {
+  padding: 50px;
+  font-family: sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
+  background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  color: white;
+}
+
+zing-grid {
+  max-width: 1000px;
+  margin: 30px auto 0 auto;
+  font-size: 14px;			
+  font-family: 'Chakra Petch', sans-serif;
+  background: #141618;
+  color: #c7e5fa;
+  border-color: #003450;
+  --theme-color-primary: #005481;
+  --zg-head-cell-background_sorted: #003450;
+  --zg-cell-background_sorted: #1b252d;
+  --zg-select-arrow-color: #ffffff;
+  --zg-head-cell-icon-color_sorted: #ffffff;
+  --zg-select-background: #021b2a;
+  --zg-select-text-background: #021b2a;
+  --zg-select-color: white;
+}
+
+zg-caption {
+  background: #000f17;
+  font-size: 25px;
+}
+
+zg-caption i {
+  max-width: 15px;
+  margin-right: 15px;
+}
+
+zg-head {
+  border-color: #003450;
+}
+
+zg-head-cell {
+  background: #021b2a;
+  color: #005481;
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}	
+
+zg-head-cell_sorted zg-icon {
+  max-width: 15px;
+  color: #ffffff;
+}
+
+zg-column[index="url"] {
+  background: #000f17; 
+  width: 25%;
+}	
+
+zg-row {
+  border-color: #003450;
+}
+
+.details {
+  font-size: 11px;
+  color: #cccccc;
+}
+
+zg-pager,
+zg-watermark {
+  background: #021b2a;
+  color: white;
+  border-color: #003450;
+}
+
+zg-watermark {
+  display: none;
+}
+
+
+.up {
+  color: #63E385;
+  font-weight: bold;
+}
+
+.down {
+  color: #FF5864;
+  font-weight: bold;
+}

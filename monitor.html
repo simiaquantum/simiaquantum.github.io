@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SIMIA QUANTUMS</title>
+  <script src="https://cdn.zinggrid.com/zinggrid.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,400i,700,700i" rel="stylesheet"><link rel="stylesheet" href="./serve_style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<zing-grid id="zgRef" caption="<i class='fas fa-server'></i> Server Monitor" src="https://zinggrid-examples.firebaseio.com/server-monitor-component" sorter pager page-size="5" page-size-options="5,10" viewport-stop>
+  <zg-colgroup>
+    <zg-column type="text" index="url">
+      [[index.url.0.urlMainText]] <em class="details">[[index.url.0.urlDetailText]]</em>
+    </zg-column>
+    <zg-column type="text" index="port"></zg-column>				
+    <zg-column type="text" index="interval"></zg-column>
+    <zg-column type="text" index="location" renderer="renderLocation"></zg-column>
+    <zg-column type="text" index="lastMonitor"></zg-column>
+    <zg-column type="text" index="monitorStatus" renderer="renderMonitorStatus"></zg-column>
+    <zg-column type="text" index="status" renderer="renderStatus"></zg-column>
+  </zg-colgroup>
+</zing-grid>
+<!-- partial -->
+  <script  src="./serve_script.js"></script>
+
+</body>
+</html>
